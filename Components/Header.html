@@ -1,0 +1,119 @@
+<div class="logo">
+  <img id="logo" src="assets/logo.png" alt="logo" />
+</div>
+
+<nav id="navbar">
+  <!-- first list -->
+  <div class="navigationlists">
+    <div class="navigation1">
+      <ul class="list">
+        <li class="active">
+          <a aria-label="link" class="navbarLink" href="#">Home</a>
+        </li>
+        <li><a aria-label="link" class="navbarLink" href="#">ABOUT</a></li>
+        <li><a aria-label="link" class="navbarLink" href="#">PROJECTS</a></li>
+        <li>
+          <a aria-label="link" class="navbarLink" href="#">NEWS & EVENTS</a>
+        </li>
+        <li><a aria-label="link" class="navbarLink" href="#">CONTACT US</a></li>
+        <li><a aria-label="link" class="navbarLink" href="#">CAREERS</a></li>
+        <li><a aria-label="link" class="navbarLink" href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <!-- secoond list -->
+    <div class="navigation2">
+      <ul class="list2">
+        <li>
+          <a aria-label="link" class="navbarLink2" href="#">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="linktext">FIND US</span>
+          </a>
+        </li>
+        <li>
+          <a aria-label="link" class="navbarLink2" href="#">
+            <i class="fas fa-clipboard-list"></i>
+            <span class="linktext"> REGISTER YOUR INTEREST</span>
+          </a>
+        </li>
+        <li>
+          <a aria-label="link" class="navbarLink2" href="#">
+            <i class="fas fa-globe"></i>
+            <span class="linktext"> LANGUAGE</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- third list -->
+    <div class="navigation3">
+      <div class="social">
+        <div class="socialbtns">
+          <div class="socialbtn">
+            <a aria-label="link" href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <div class="socialbtn">
+            <a aria-label="link" href=""> <i class="fab fa-facebook-f"></i></a>
+          </div>
+
+          <div class="socialbtn">
+            <a aria-label="link" href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="socialbtn">
+            <a aria-label="link" href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="socialbtnText">Subscribe to our newsletter</div>
+
+        <div class="subscribeform">
+          <form>
+            <div class="flexform">
+              <input
+                type="email"
+                placeholder="Email Address"
+                required="required"
+              />
+              <button class="button">
+                <p class="bold">Send</p>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="navbottom">
+          DIGITAL SOLUTIONS BY
+          <span> WHITE BEARD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="search">
+  <i class="fas fa-search"></i>
+</div>
+
+<div class="menu-toggle">
+  <i class="fa fa-bars"></i>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $(".menu-toggle").click(function () {
+      $("#navbar").toggle(1000);
+      $("i", this).toggleClass("fa fa-bars fas fa-times");
+    });
+  });
+  $(function () {
+    $(".list li ").click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+  });
+</script>

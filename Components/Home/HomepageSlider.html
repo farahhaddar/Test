@@ -1,0 +1,67 @@
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img
+      alt="image"
+      class="slider-image"
+      src="assets/image1.jpg"
+    />
+    <div class="text">Lorem Ipsum is simply dummy text</div>
+    <div class="dimmed"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img
+      alt="image"
+      class="slider-image"
+
+      src="assets/image2.jpg"
+    />
+    <div class="text">Caption Two</div>
+    <div class="dimmed"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img
+      alt="image"
+      class="slider-image"
+
+      src="assets/image3.jpg"
+    />
+    <div class="text">Caption Three</div>
+    <div class="dimmed"></div>
+  </div>
+
+  <a aria-label="link" class="prev" onclick="plusSlides(-1)">
+    &larr; <span class="sliderbtn">Previous</span>
+  </a>
+  <a aria-label="link" class="next" onclick="plusSlides(1)"
+    >&rarr;<span class="sliderbtn">Next</span></a
+  >
+</div>
+<br />
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
