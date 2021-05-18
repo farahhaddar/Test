@@ -110,7 +110,7 @@ input[type="email"] {
   height: 40px;
   width: 90px;
   border-radius: 20px;
-  background-color: #f7c53b;
+  background-color: #ddaa5f;
   border: none;
 }
 
@@ -295,7 +295,7 @@ input[type="email"] {
   align-items: center;
   background-color: #00388e;
 }
-.BWS{
+.BWS {
   background-color: #ffffff;
   margin: auto;
   justify-content: center;
@@ -379,7 +379,7 @@ footer h5 {
   height: 40px;
   width: 80px;
   border-radius: 20px;
-  background-color: #f7c53b;
+  background-color: #ddaa5f;
   border: none;
 }
 /* place holder for all browsers */
@@ -410,7 +410,6 @@ footer ul li a {
 .main {
   margin-top: 0.5%;
   padding-bottom: 0%;
-  margin-bottom: 10%;
 }
 
 /* slider */
@@ -541,7 +540,7 @@ footer ul li a {
 }
 
 .titlelink a {
-  font-size: 14px;
+  font-size: 12px;
   color: black;
 }
 .projectsDisplay {
@@ -565,7 +564,7 @@ footer ul li a {
 
 /* about us */
 .AboutUs {
-  padding: 20px;
+  padding: 10px;
 }
 .sectiontitleAbout {
   padding: 0;
@@ -579,11 +578,11 @@ footer ul li a {
 }
 .abouttext {
   font-size: 15px;
-  width: 70%;
+  width: 60%;
   margin-right: 5%;
 }
 .AboutImages {
-  width: 65%;
+  width: 40%;
 }
 .AboutImages img {
   height: 250px;
@@ -649,7 +648,7 @@ header {
 
 /* fACILITIES */
 .facilities {
-   background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .facilitiesWarper {
@@ -707,8 +706,8 @@ header {
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
-  padding: 0.25rem;
-  bottom: 2px;
+  padding: 0.5rem;
+  bottom: 0px;
   left: 0;
   margin: 0;
 }
@@ -760,10 +759,10 @@ header {
 }
 
 /* units */
-.unitsHome{
+.unitsHome {
   background: #ffffff;
 }
-.unitsTitle{
+.unitsTitle {
   border-bottom: 2px solid #ddaa5f;
   width: fit-content;
   align-items: center;
@@ -771,25 +770,21 @@ header {
   padding-top: 5%;
 }
 
-
-
-
-
-
-
 /* contact form */
-.ContactForm{
-   display: flex;
-   margin: auto; 
-   flex-direction: row; 
-   justify-content: space-around; 
-   align-items: center; 
-   padding:10% 10%;
-   box-shadow: inset 0px 33.33vh 0px white, inset 0px 66.66vh 0px rgba(241, 240, 240, 0.815), inset 0px 99.99vh 0px white;
-   
+.ContactForm {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 5% 5%; */
+  background-color: #ddaa5f;
+  /* box-shadow: inset 0px 33.33vh 0px white,
+    inset 0px 66.66vh 0px rgba(241, 240, 240, 0.815),
+    inset 0px 99.99vh 0px white; */
 }
 
-.warpContact{
+.warpContact {
   font-size: 14px;
   width: 90%;
   background-color: #00000000;
@@ -797,22 +792,21 @@ header {
   margin-right: 20px;
 }
 
-.warpContact h1{
+.warpContact h1 {
   margin-bottom: 3%;
 }
 
-.contactLink a{
-   color:#ddaa5f;
+.contactLink a {
+  color: #ddaa5f;
 }
 
 .contactLink {
   font-size: 20px;
   padding-top: 10%;
 }
-.arrowForm{
-  color:black;
+.arrowForm {
+  color: black;
 }
-
 
 .formBtnHome {
   border: none;
@@ -855,10 +849,11 @@ header {
   font-size: 25px;
 }
 
-.formHome input,select {
+.formHome input,
+select {
   border: none;
   border-bottom: 1px solid #86a9dd;
-  background-color: transparent; 
+  background-color: transparent;
   width: 35%;
   margin: 30px;
 }
@@ -869,84 +864,198 @@ header {
   font-weight: 500;
 }
 
-.homeContactSelecet{
-   color: #86a9dd;
+.homeContactSelecet {
+  color: #86a9dd;
   width: 100%;
-  
 }
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 900px) {
-.ContactForm{
-   flex-direction: column; 
-   align-items: flex-start; 
-   padding:0px;
-   box-shadow: none;
+/* card */
+.contCard {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap !important;
+  border: 1px solid rgb(235, 232, 232);
+  height: 290px !important;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+  margin: 2px;
+  font-size: 15px;
 }
 
-.warpContact{
-  font-size: 16px;
-  width: 100% !important;
-  background-color: rgba(255, 21, 21, 0);
-  font-weight: 500;
-  margin-right: 0%;
+.imgCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgCard {
+  position: relative;
+  width: 50%;
+  height: 100% !important;
+}
+.datacard {
+  word-wrap: break-word;
   padding: 3%;
+  height: 100%;
+  width: 50%;
+  height: fit-content;
 }
-
-.warpContact h1{
-  font-size: 25px;
+.datacard h2 {
+  padding-top: 2%;
+  border-bottom: 3px solid #ddaa5f;
+  width: 75%;
+  margin-bottom: 6%;
+}
+.datacard .cardLink {
+  border: none;
+  background-color: #ddaa5f;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
   margin-top: 5%;
   margin-bottom: 5%;
+  font-size: 12px;
+  font-weight: 600;
 }
-.contactLink{
-  margin-bottom: 5%;
-}
-.contactLink a{
-   color:#ddaa5f;
-}
-
-.wraperForm {
-  flex-direction: column;
-  align-items: flex-start;
+.datacard .cardLink a {
+  color: white;
 }
 
-.warperFormInput {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* slick carousel units page */
+.prev_arrow {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.575);
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: 47.5%;
+  top: 82%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+.next_arrow {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.575);
+  display: block;
+  position: absolute;
+  left: 48.75%;
+  top: 82%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  text-align: center;
 }
 
-
-.formHome {
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.titleForm {
-  padding: 30px;
-  font-size: 20px;
-}
-
-.formHome input,select {
+.slickSlider {
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
   width: 100%;
-  margin: 30px;
 }
 
-.formHome input::placeholder {
-  color: #86a9dd;
-  font-family: Muli;
-  font-weight: 500;
+.unitsHome {
+  position: relative;
 }
+.select-items {
+  width: 10px !important;
+}
+@media screen and (max-width: 900px) {
+  .datacard h2 {
+    border-bottom: 3px solid #ddaa5f;
+    width: fit-content;
+    margin-bottom: 6%;
+  }
 
+  .contCard {
+    display: flex !important;
+    flex-direction: column;
+    height: fit-content !important;
+  }
+
+  .imgCard {
+    width: 100%;
+    height: 250px !important;
+  }
+  .datacard {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* contact form */
+
+  .ContactForm {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    box-shadow: none;
+  }
+
+  .warpContact {
+    font-size: 16px;
+    width: 100% !important;
+    background-color: rgba(255, 21, 21, 0);
+    font-weight: 500;
+    margin-right: 0%;
+    padding: 3%;
+  }
+
+  .warpContact h1 {
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .contactLink {
+    margin-bottom: 5%;
+  }
+  .contactLink a {
+    color: #ddaa5f;
+  }
+
+  .wraperForm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .warperFormInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .formHome {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .titleForm {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .formHome input,
+  select {
+    width: 100%;
+    margin: 30px;
+  }
+
+  .formHome input::placeholder {
+    color: #86a9dd;
+    font-family: Muli;
+    font-weight: 500;
+  }
 
   .btnH {
     display: none;
@@ -1084,29 +1193,3 @@ header {
     height: 300px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

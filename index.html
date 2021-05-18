@@ -4,50 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
-    <title>Tunis Sports city</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli"/>
+    <title>Tunis Sports City</title>
   </head>
 
-
   <body>
-   <header class='nav' id="header"></header>
+    <header class="nav" id="header"></header>
 
-   <div class="main">
-     <div id="topSlider"></div>
-     <div id="aboutUs"></div>
-     <div id="projects"></div>
-     <div id="facilities"></div>
-     <div id="units"></div>
-     <div id="contact"></div>
-   </div>
-  
+    <div class="main">
+      <div id="topSlider"></div>
+      <div id="aboutUs"></div>
+      <div id="projects"></div>
+      <div id="facilities"></div>
+      <div id="units"></div>
+      <div id="contact"></div>
+    </div>
 
-   <div id="footer"></div>
-
+    <div id="footer"></div>
   </body>
 
-
   <script>
-     
     $(document).ready(function () {
-      $('#header').load('/Components/Header.html')
-      $('#footer').load('Components/footer.html')
-      $('#topSlider').load('Components/Home/HomepageSlider.html')
-      $('#aboutUs').load('Components/Home/AboutUs.html')
-      $('#projects').load('Components/Home/Projects.html')
-      $('#facilities').load('Components/Home/Facilities.html')
-      $('#units').load('Components/Home/UnitsHome.html')
-      $('#contact').load('Components/Home/ContactForm.html')
-
+      $("#header").load("/Components/Header.html");
+      $("#footer").load("Components/footer.html");
+      $("#topSlider").load("Components/Home/HomepageSlider.html");
+      $("#aboutUs").load("Components/Home/AboutUs.html");
+      $("#projects").load("Components/Home/Projects.html");
+      $("#facilities").load("Components/Home/Facilities.html");
+      $("#units").load("Components/Home/UnitsHome.html");
+      $("#contact").load("Components/Home/ContactForm.html");
     });
-   
   </script>
 </html>
