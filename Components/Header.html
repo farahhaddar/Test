@@ -1,5 +1,5 @@
 <div class="logo">
-  <img id="logo" src="assets/logo.png" alt="logo" />
+  <img id="logo" src="assets/Images/logo.png" alt="logo" />
 </div>
 
 <nav id="navbar">
@@ -7,30 +7,30 @@
   <div class="navigationlists">
     <div class="navigation1">
       <ul class="list">
-        <li class="active">
-          <a aria-label="link" class="navbarLink" href="#">Home</a>
+        <li >
+          <a aria-label="link" class="navbarLink" href="index.html">Home</a>
         </li>
-        <li><a aria-label="link" class="navbarLink" href="#">ABOUT</a></li>
-        <li><a aria-label="link" class="navbarLink" href="#">PROJECTS</a></li>
+        <li><a aria-label="link" class="navbarLink" href="About.html">ABOUT</a></li>
+        <li><a aria-label="link" class="navbarLink" href="Projects.html">PROJECTS</a></li>
         <li>
-          <a aria-label="link" class="navbarLink" href="#">NEWS & EVENTS</a>
+          <a aria-label="link" class="navbarLink" href="News&Events.html">NEWS & EVENTS</a>
         </li>
-        <li><a aria-label="link" class="navbarLink" href="#">CONTACT US</a></li>
-        <li><a aria-label="link" class="navbarLink" href="#">CAREERS</a></li>
-        <li><a aria-label="link" class="navbarLink" href="#">FAQ</a></li>
+        <li><a aria-label="link" class="navbarLink" href="ContactUs.html">CONTACT US</a></li>
+        <li><a aria-label="link" class="navbarLink" href="Careers.html">CAREERS</a></li>
+        <li><a aria-label="link" class="navbarLink" href="FAQ.html">FAQ</a></li>
       </ul>
     </div>
     <!-- secoond list -->
     <div class="navigation2">
       <ul class="list2">
         <li>
-          <a aria-label="link" class="navbarLink2" href="#">
+          <a aria-label="link" class="navbarLink2" href="FindUs.html">
             <i class="fas fa-map-marker-alt"></i>
             <span class="linktext">FIND US</span>
           </a>
         </li>
         <li>
-          <a aria-label="link" class="navbarLink2" href="#">
+          <a aria-label="link" class="navbarLink2" href="Register.html">
             <i class="fas fa-clipboard-list"></i>
             <span class="linktext"> REGISTER YOUR INTEREST</span>
           </a>
@@ -111,10 +111,21 @@
       $("#navbar").toggle(1000);
       $("i", this).toggleClass("fa fa-bars fas fa-times");
     });
-  });
-  $(function () {
-    $(".list li ").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-    });
+    $(function () {
+          var current = location.pathname.split("/").pop();
+          console.log(current)
+          if(current !== ""){
+          $(".navbarLink").each(function () {
+            var $this = $(this); 
+            if ($this.attr("href").indexOf(current) !== -1) {
+              $this.addClass("active");
+            }
+          });
+        }else{
+          $("[href='index.html']").addClass("active");
+        }
+        });
+
+
   });
 </script>

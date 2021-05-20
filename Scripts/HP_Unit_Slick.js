@@ -3,8 +3,7 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
-        prevArrow: "<span class='prev_arrow'><i class='fas fa-angle-left'></i></span>",
-        nextArrow: "<span class='next_arrow'><i class='fas fa-angle-right'></i></span>",
+        arrows: false,
         responsive: [
             {
                 breakpoint: 900,
