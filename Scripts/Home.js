@@ -6,5 +6,5 @@ $(document).ready(function () {
     $("#projects").load("Components/Home/Projects.html");
     $("#facilities").load("Components/Home/Facilities.html");
     $("#units").load("Components/Home/UnitsHome.html");
-    $("#contact").load("Components/Home/ContactForm.html");
+    $("#contact").load("Components/ContactForm.html");
 });
