@@ -81,7 +81,6 @@ footer ul li a {color: rgba(255, 255, 255, 0.877);font-size: 15px;}
 .sectiontitleAbout {padding: 10;}
 .about-body {display: flex;flex-direction: row;justify-content: center;margin: 0% 15%;}
 .abouttext {font-size: 15px;width: 80%;margin-right: 5%;}
-
 .AboutImages {width: 80%;}
 .abouttext {display: flex;flex-direction: column;}
 .aboutLink a {color: black;}
@@ -93,8 +92,6 @@ footer ul li a {color: rgba(255, 255, 255, 0.877);font-size: 15px;}
 #s1:checked ~ #slide2,#s2:checked ~ #slide1 {box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);transform: translate3d(-15%, 0, -100px);}
 #s1:checked ~ #slide2,
 #s2:checked ~ #slide1 {box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);transform: translate3d(30%, 0, -200px);}
-
-
 .dimmed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(180deg,rgba(0, 0, 0, 0.6) 50%,rgba(73, 72, 72, 0.6),rgba(29, 28, 28, 0.2));}
 .slider-image {width: 100%;height: 350px;}
 .project-images {width: 100%;}
@@ -120,7 +117,6 @@ header {-webkit-mask-image: none;mask-image: none;}
 .btnH {border: 1px solid #ddaa5f;background-color: rgba(255, 255, 255, 0);border-radius: 100px;padding: 15px 32px;text-align: center;text-decoration: none;font-size: 12px;font-weight: 600;margin-top: 10%;cursor: pointer;}
 .unitsHome {background: #ffffff;}
 .unitsTitle {border-bottom: 3px solid #ddaa5f;width: fit-content;align-items: center;margin: auto;padding-top: 5%;}
-
 .ContactForm {display: flex;margin: auto;flex-direction: row;justify-content: space-around;align-items: center;padding: 5% 5%;background-color: #ffffff;}
 .formbgcolor {height: 300px;background-color: rgba(223, 223, 223, 0.198);width: 100%;position: absolute;}
 .warpContact {z-index: 2;font-size: 14px;width: 50%;background-color: #00000000;font-weight: 600;margin-right: 50px;padding-left: 17%;}
@@ -138,10 +134,6 @@ select {width: 45%;margin-bottom: 3%;padding:5% 2%;border: none;border-bottom: 1
 .formHome {z-index: 2;background-color: #f0f4fa;display: flex;flex-direction: column;justify-content: center;align-items: center;width: 50%;margin-right: 10%;}
 .titleForm {color: #063e8e;padding: 25px;font-weight: 700;font-size: 25px;}
 /* form */
-
-
-
-
 .homeContactSelecet {color: #86a9dd;width: 100%;}
 .contCard {display: flex !important;flex-direction: row;flex-wrap: wrap !important;border: 1px solid rgb(235, 232, 232);height: 290px !important;margin: auto;justify-content: center;margin-top: 20px;margin: 2px;font-size: 15px;}
 .imgCard img {height: 100%;width: 100%;object-fit: cover;}
@@ -263,66 +255,19 @@ textarea { resize: none; }
 .topTextTittle{width: 30%;font-size: 32px;font-weight: 900;color:#063e8e;}
 .topTextDets{ width: 60%;font-size: 15px;}
 .findmap{width:100%;height: 400px;}
-
-.regestir{
-  display: flex;
-}
-.regImge{
-  width:50%;
-  height: 30rem;
-}
-.regForm{
-   width:50%;
-}
-
-
-
-.formBtnHomereg {
-  border: none;
-  background-color: #ddaa5f;
-  color: white;
-  border-radius: 100px;
-  padding: 10px 22px;
-  text-align:center;
-  cursor: pointer;
-  width: 150px;
-  margin-top:8%;
-}
-.wraperFormreg {
-  display: flex;
-  flex-direction: column;
-}
-
+/* reg form */
+.regestir{display: flex;}
+.regImge{width:50%;height: 30rem;}
+.regForm{ width:50%; }
+.formBtnHomereg {border: none;background-color: #ddaa5f;color: white;border-radius: 100px;padding: 10px 22px;text-align:center;cursor: pointer;width: 150px;margin-top:8%;}
+.wraperFormreg {display: flex;flex-direction: column;}
 .formHomereg input,
-select {
-  width: 100%;
-  margin-bottom: 5%;
-  padding:3% 0 ;
-  border: none;
-  border-bottom: 1px solid #86a9dd;
-  background-color: transparent;
-}
-.formHomereg input::placeholder {
-  color: #86a9dd;
-  font-family: Muli;
-  font-weight: 600;
-}
+select {width: 100%;margin-bottom: 5%;padding:3% 0 ;border: none;border-bottom: 1px solid #86a9dd;background-color: transparent;}
+.formHomereg input::placeholder,.formHomereg select {color: #86a9dd;font-family: Muli;font-weight: 600;}
+.formHomereg {background-color: #f0f4fa;display: flex;flex-direction: column;justify-content: center;width: 100%;height: 100%;padding: 0 30% 0 10%;}
+.titleFormreg {color: #063e8e;font-weight: 900;font-size: 45px;padding-bottom: 10%;}
+/* reg form */
 
-.formHomereg {
-  background-color: #f0f4fa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 30% 0 10%;
-}
-.titleFormreg {
-  color: #063e8e;
-  font-weight: 900;
-  font-size: 45px;
-  padding-bottom: 10%;
-}
 
 
 
@@ -331,46 +276,21 @@ select {
 @media screen and (max-width: 900px) {
 
 
+
+
+
+
+
+/* reg form */
 .formHomereg input,
-select {
-  width: 100%;
-  margin: 0 !important;
-  margin-bottom: 4%;
-  padding:6% 0 !important;
-  border: none;
-  border-bottom: 1px solid #86a9dd;
-  background-color: transparent;
-}
-
-.formHomereg {
-  width: 100%;
-  padding: 0 6%;
-}
-.titleFormreg {
-  font-size: 45px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.formBtnHomereg {
-  margin-bottom: 5%;
-}
-
-
-
-
-
-
-
-
+select {width: 100%;margin: 0 !important;margin-bottom: 4%;padding:6% 0 !important;border: none;border-bottom: 1px solid #86a9dd;background-color: transparent;}
+.formHomereg {width: 100%;padding: 0 6%;}
+.titleFormreg {font-size: 45px;padding-top: 5%;padding-bottom: 5%;}
+.formBtnHomereg {margin-bottom: 5%;}
 .regestir{display: flex;flex-direction: column;}
 .regImge{width:100%;height: 20rem;}
 .regForm{width:100%;}
-
-
-
-
-
+/* reg form */
 .topText{padding:8% 8%;flex-direction: column;text-align: center;}
 .topTextTittle{width: 100%;margin-bottom: 5%;font-size: 25px;}
 .topTextDets{ width: 100%;}
@@ -478,17 +398,10 @@ select {
 }
 @media screen and (max-width: 400px) {
 .imgbwarp{margin:20px 35px 0 0;float: right;}
-  .textHeroFind{
-  left:30% !important;
-  font-size: 35px;
-
-}
-
+.textHeroFind{left:30% !important;font-size: 35px;}
 }
 @media screen and (max-width: 570px) {
 .objCont{width:100%;}
 .partnersCont{width:100%;}
-.titleFormreg {
-  font-size: 25px;
-}
+.titleFormreg {font-size: 25px;}
 }
